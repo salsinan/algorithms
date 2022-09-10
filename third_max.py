@@ -37,7 +37,7 @@ Constraints:
     # Memory: 15.5 MB
     
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums: list[int]) -> int:
         nums = sorted(set(nums))
         
         return max(nums) if len(nums) < 3 else nums[-3]
